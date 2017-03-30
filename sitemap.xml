@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2017/03/29/oauth2/</loc>
+    
+    <lastmod>2017-03-30T06:09:57.182Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/categories/index.html</loc>
     
     <lastmod>2017-03-30T05:31:07.365Z</lastmod>
@@ -19,34 +26,6 @@
     <loc>http://yoursite.com/tags/index.html</loc>
     
     <lastmod>2017-03-30T05:26:16.597Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/03/29/about/</loc>
-    
-    <lastmod>2017-03-30T05:23:14.827Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/03/29/oauth2/</loc>
-    
-    <lastmod>2017-03-29T10:12:36.535Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/03/28/%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3JVM%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc>
-    
-    <lastmod>2017-03-28T10:27:18.576Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/03/28/hello-world/</loc>
-    
-    <lastmod>2017-03-28T09:33:26.443Z</lastmod>
     
   </url>
   
