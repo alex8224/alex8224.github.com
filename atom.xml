@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-30T05:28:53.596Z</updated>
+  <updated>2017-03-30T09:13:00.805Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>授权和验证的区别</title>
+    <link href="http://yoursite.com/2017/03/30/differences-bw-authentication-authorization/"/>
+    <id>http://yoursite.com/2017/03/30/differences-bw-authentication-authorization/</id>
+    <published>2017-03-30T09:09:03.000Z</published>
+    <updated>2017-03-30T09:13:00.805Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Authentication-验证&quot;&gt;&lt;a href=&quot;#Authentication-验证&quot; class=&quot;headerlink&quot; title=&quot;Authentication(验证)&quot;&gt;&lt;/a&gt;Authentication(验证)&lt;/h1&gt;&lt;p&gt;验证检查 &lt;st
+    
+    </summary>
+    
+    
+      <category term="oauth2" scheme="http://yoursite.com/tags/oauth2/"/>
+    
+  </entry>
   
   <entry>
     <title>PostgreSql笔记</title>
@@ -43,12 +61,12 @@
     <link href="http://yoursite.com/2017/03/29/oauth2/"/>
     <id>http://yoursite.com/2017/03/29/oauth2/</id>
     <published>2017-03-29T09:56:31.000Z</published>
-    <updated>2017-03-30T06:14:21.982Z</updated>
+    <updated>2017-03-30T07:48:28.132Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;服务搭建&lt;/p&gt;
-
+      &lt;h1 id=&quot;术语&quot;&gt;&lt;a href=&quot;#术语&quot; class=&quot;headerlink&quot; title=&quot;术语&quot;&gt;&lt;/a&gt;术语&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;client: also known as application, for example Twitter for iPhon
     
     </summary>
     

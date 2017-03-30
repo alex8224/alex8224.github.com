@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[授权和验证的区别]]></title>
+      <url>%2F2017%2F03%2F30%2Fdifferences-bw-authentication-authorization%2F</url>
+      <content type="text"><![CDATA[Authentication(验证)验证检查 你是谁? Authorization(授权)授权检查 你被授予能做什么的权利]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[PostgreSql笔记]]></title>
       <url>%2F2017%2F03%2F30%2FPostgresql%E7%AC%94%E8%AE%B0%2F</url>
       <content type="text"><![CDATA[PostgreSql 笔记获取不带毫秒的时间 1234create table t1 (ts timestamp);insert into t1 values(now());select ts::timestamp(0) from t1;select cast (ts as timestamp(0)) from t1; https://www.postgresql.org/message-id/1136477796.21986.27.camel@state.g2switchworks.com]]></content>
@@ -12,7 +19,7 @@
     <entry>
       <title><![CDATA[oauth2]]></title>
       <url>%2F2017%2F03%2F29%2Foauth2%2F</url>
-      <content type="text"><![CDATA[服务搭建]]></content>
+      <content type="text"><![CDATA[术语 client: also known as application, for example Twitter for iPhone is a client resource owner: it is usually the user of a website access token: this is the key for a client to get resource from a resource owner]]></content>
     </entry>
 
     
