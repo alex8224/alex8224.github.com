@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>自留地</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-03-30T05:28:53.596Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Alex8224</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PostgreSql笔记</title>
+    <link href="http://yoursite.com/2017/03/30/Postgresql%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2017/03/30/Postgresql笔记/</id>
+    <published>2017-03-30T03:20:00.000Z</published>
+    <updated>2017-03-30T05:28:53.596Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;PostgreSql-笔记&quot;&gt;&lt;a href=&quot;#PostgreSql-笔记&quot; class=&quot;headerlink&quot; title=&quot;PostgreSql 笔记&quot;&gt;&lt;/a&gt;PostgreSql 笔记&lt;/h1&gt;&lt;p&gt;获取不带毫秒的时间&lt;/p&gt;
+&lt;figure clas
+    
+    </summary>
+    
+      <category term="数据库" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="PostgreSql" scheme="http://yoursite.com/tags/PostgreSql/"/>
+    
+      <category term="日期" scheme="http://yoursite.com/tags/%E6%97%A5%E6%9C%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>oauth2</title>
+    <link href="http://yoursite.com/2017/03/29/oauth2/"/>
+    <id>http://yoursite.com/2017/03/29/oauth2/</id>
+    <published>2017-03-29T09:56:31.000Z</published>
+    <updated>2017-03-29T10:12:36.535Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;[toc]&lt;/p&gt;
+&lt;h2 id=&quot;理解OAuth-2-0&quot;&gt;&lt;a href=&quot;#理解OAuth-2-0&quot; class=&quot;headerlink&quot; title=&quot;理解OAuth 2.0&quot;&gt;&lt;/a&gt;理解OAuth 2.0&lt;/h2&gt;&lt;p&gt;OAuth是一个关于授权（authoriz
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关于我</title>
+    <link href="http://yoursite.com/2017/03/29/about/"/>
+    <id>http://yoursite.com/2017/03/29/about/</id>
+    <published>2017-03-29T08:55:10.000Z</published>
+    <updated>2017-03-30T05:23:14.827Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;是一个写Java的程序员,&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;di
+    
+    </summary>
+    
+    
+      <category term="关于我" scheme="http://yoursite.com/tags/%E5%85%B3%E4%BA%8E%E6%88%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>深入了解JVM虚拟机</title>
+    <link href="http://yoursite.com/2017/03/28/%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3JVM%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    <id>http://yoursite.com/2017/03/28/深入了解JVM虚拟机/</id>
+    <published>2017-03-28T10:07:49.000Z</published>
+    <updated>2017-03-28T10:27:18.576Z</updated>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2017/03/28/hello-world/"/>
+    <id>http://yoursite.com/2017/03/28/hello-world/</id>
+    <published>2017-03-28T09:33:26.443Z</published>
+    <updated>2017-03-28T09:33:26.443Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
