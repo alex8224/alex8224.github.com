@@ -7,7 +7,7 @@
 
     
 
-    <title>深入了解JVM虚拟机 | </title>
+    <title>PostgreSql笔记 | </title>
     <meta name="author" content="Alex8224">
     
     <meta name="description" content="风飞扬的自留地">
@@ -15,7 +15,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta property="og:title" content="深入了解JVM虚拟机"/>
+    <meta property="og:title" content="PostgreSql笔记"/>
     <meta property="og:site_name" content="自留地"/>
 
     
@@ -213,12 +213,12 @@
             <div class="article-title">
                 
     
-        <h1>深入了解JVM虚拟机</h1>
+        <h1>PostgreSql笔记</h1>
     
 
 
             </div>
-            <time class="pink-link-context" datetime="2017-03-28T10:07:49.000Z"><a href="/2017/03/28/深入了解JVM虚拟机/">2017-03-28</a></time>
+            <time class="pink-link-context" datetime="2017-03-30T03:20:00.000Z"><a href="/2017/03/30/Postgresql笔记/">2017-03-30</a></time>
 
             <span id="busuanzi_container_page_pv" class="read-times-container">
     <i class="fa fa-eye"></i>
@@ -226,27 +226,31 @@
 </span>
 
             
+    <div class="tags-row">
+        
+            <a href="/tags/PostgreSql-日期时间/" class="chip pink lighten-1">PostgreSql, 日期时间</a>
+        
+    </div>
+
 
             <div class="toc pink-link-context hide-on-med-and-down">
-    
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#PostgreSql-笔记"><span class="section table-of-contents-text">PostgreSql 笔记</span></a></li></ol>
 </div>
 
 
             <div class="entry pink-link-context">
-                <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.utils.List；</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DeepLearningJVM</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args &#123;&#125;)</span> </span>&#123;</div><div class="line">        System.out.println(<span class="string">"JVM"</span>);</div><div class="line">        List&lt;String&gt; list = Arrays.asList(<span class="string">"1"</span>,<span class="string">"2"</span>,<span class="string">"3"</span>);</div><div class="line">        list.foreach((v)-&gt;&#123;</div><div class="line">            System.out.println(String.format(<span class="string">"====%s"</span>, v));</div><div class="line">        &#125;);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+                <h1 id="PostgreSql-笔记"><a href="#PostgreSql-笔记" class="headerlink" title="PostgreSql 笔记"></a>PostgreSql 笔记</h1><p>获取不带毫秒的时间</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">create</span> <span class="keyword">table</span> t1 (ts <span class="keyword">timestamp</span>);</div><div class="line"><span class="keyword">insert</span> <span class="keyword">into</span> t1 <span class="keyword">values</span>(<span class="keyword">now</span>());</div><div class="line"><span class="keyword">select</span> ts::<span class="keyword">timestamp</span>(<span class="number">0</span>) <span class="keyword">from</span> t1;</div><div class="line"><span class="keyword">select</span> <span class="keyword">cast</span> (ts <span class="keyword">as</span> <span class="keyword">timestamp</span>(<span class="number">0</span>)) <span class="keyword">from</span> t1;</div></pre></td></tr></table></figure>
+<blockquote>
+<p><a href="https://www.postgresql.org/message-id/1136477796.21986.27.camel@state.g2switchworks.com" target="_blank" rel="external">https://www.postgresql.org/message-id/1136477796.21986.27.camel@state.g2switchworks.com</a></p>
+</blockquote>
 
                 
-<p class="pink-link-context">
-    <a href="/2017/03/29/about/" rel="next" title="关于我">
-    上一篇：关于我
-  </a>
-</p>
-
 
 
 <p class="pink-link-context">
-    <a href="/2017/03/28/hello-world/" rel="next" title="Hello World">
-    下一篇：Hello Worldcore
+    <a href="/2017/03/29/oauth2/" rel="next" title="oauth2">
+    下一篇：oauth2core
   </a>
 </p>
 
