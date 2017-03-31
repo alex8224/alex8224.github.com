@@ -531,7 +531,77 @@
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">create</span> <span class="keyword">table</span> t1 (ts <span class="keyword">timestamp</span>);</div><div class="line"><span class="keyword">insert</span> <span class="keyword">into</span> t1 <span class="keyword">values</span>(<span class="keyword">now</span>());</div><div class="line"><span class="keyword">select</span> ts::<span class="keyword">timestamp</span>(<span class="number">0</span>) <span class="keyword">from</span> t1;</div><div class="line"><span class="keyword">select</span> <span class="keyword">cast</span> (ts <span class="keyword">as</span> <span class="keyword">timestamp</span>(<span class="number">0</span>)) <span class="keyword">from</span> t1;</div></pre></td></tr></table></figure>
 <blockquote>
 <p><a href="https://www.postgresql.org/message-id/1136477796.21986.27.camel@state.g2switchworks.com" target="_blank" rel="external">https://www.postgresql.org/message-id/1136477796.21986.27.camel@state.g2switchworks.com</a></p>
+<p><a href="https://www.postgresql.org/docs/9.1/static/datatype-datetime.html" target="_blank" rel="external">https://www.postgresql.org/docs/9.1/static/datatype-datetime.html</a></p>
 </blockquote>
+<p>简单来说， timstamp(p), 这个p代表的是时间的精度，范围从 0-6. 下表对此做了详细的说明</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Storage Size</th>
+<th>Description</th>
+<th>Low Value</th>
+<th>High Value</th>
+<th>Resolution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timestamp [ (p) ] [ without time zone ]</td>
+<td>8 bytes</td>
+<td>both date and time (no time zone)</td>
+<td>4713 BC</td>
+<td>294276 AD</td>
+<td>1 microsecond / 14 digits</td>
+<td></td>
+</tr>
+<tr>
+<td>timestamp [ (p) ] with time zone</td>
+<td>8 bytes</td>
+<td>both date and time, with time zone</td>
+<td>4713 BC</td>
+<td>294276 AD</td>
+<td>1 microsecond / 14 digits</td>
+<td></td>
+</tr>
+<tr>
+<td>date</td>
+<td>4 bytes</td>
+<td>date (no time of day)</td>
+<td>4713 BC</td>
+<td>5874897 AD</td>
+<td>1 day</td>
+<td></td>
+</tr>
+<tr>
+<td>time [ (p) ] [ without time zone ]</td>
+<td>8 bytes</td>
+<td>time of day (no date)</td>
+<td>00:00:00</td>
+<td>24:00:00</td>
+<td>1 microsecond / 14 digits</td>
+<td></td>
+</tr>
+<tr>
+<td>time [ (p) ] with time zone</td>
+<td>12 bytes</td>
+<td>times of day only, with time zone</td>
+<td>00:00:00+1459</td>
+<td>24:00:00-1459</td>
+<td>1 microsecond / 14 digits</td>
+<td></td>
+</tr>
+<tr>
+<td>interval [ fields ] [ (p) ]</td>
+<td>16 bytes</td>
+<td>time interval</td>
+<td>-178000000 years</td>
+<td>178000000 years</td>
+<td>1 microsecond / 14 digits</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
           
         

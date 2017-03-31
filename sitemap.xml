@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2017/03/30/Postgresql%E7%AC%94%E8%AE%B0/</loc>
+    
+    <lastmod>2017-03-31T03:55:25.664Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2017/03/30/differences-bw-authentication-authorization/</loc>
     
     <lastmod>2017-03-30T09:13:00.805Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://yoursite.com/categories/index.html</loc>
     
     <lastmod>2017-03-30T05:31:07.365Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/03/30/Postgresql%E7%AC%94%E8%AE%B0/</loc>
-    
-    <lastmod>2017-03-30T05:28:53.596Z</lastmod>
     
   </url>
   
