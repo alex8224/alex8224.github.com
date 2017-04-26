@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-30T09:13:00.805Z</updated>
+  <updated>2017-04-26T03:44:20.980Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>testImage</title>
+    <link href="http://yoursite.com/2017/04/26/testImage/"/>
+    <id>http://yoursite.com/2017/04/26/testImage/</id>
+    <published>2017-04-26T03:41:58.000Z</published>
+    <updated>2017-04-26T03:44:20.980Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>SpringBoots单Jar部署导致的请求缓慢的问题</title>
+    <link href="http://yoursite.com/2017/04/26/SpringBoots%E5%8D%95Jar%E9%83%A8%E7%BD%B2%E5%AF%BC%E8%87%B4%E7%9A%84%E8%AF%B7%E6%B1%82%E7%BC%93%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>http://yoursite.com/2017/04/26/SpringBoots单Jar部署导致的请求缓慢的问题/</id>
+    <published>2017-04-26T03:23:08.000Z</published>
+    <updated>2017-04-26T03:56:42.801Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;使用单Jar部署SpringBoots, 方便,无其他依赖,在构建Jar的时候,会把所有的依赖都打包进Jar包中, 初看没什么问题.&lt;br&gt;但是如果使用tomcat作为内嵌container,会出现规律性的请求变慢的问题, 经过Jvisualvm分析, 发现tomcat中有
+    
+    </summary>
+    
+    
+      <category term="SpringBoots慢" scheme="http://yoursite.com/tags/SpringBoots%E6%85%A2/"/>
+    
+      <category term="getArchiveEntries" scheme="http://yoursite.com/tags/getArchiveEntries/"/>
+    
+      <category term="backgroundProcess" scheme="http://yoursite.com/tags/backgroundProcess/"/>
+    
+  </entry>
   
   <entry>
     <title>授权和验证的区别</title>
