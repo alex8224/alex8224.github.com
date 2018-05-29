@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[使用Linux虚拟机搭建透明代理]]></title>
       <url>%2F2018%2F05%2F30%2Fbuild-tproxy%2F</url>
-      <content type="text"><![CDATA[##准备工作1.准备vps，推荐搬瓦工]]></content>
+      <content type="text"><![CDATA[准备工作 准备vps，推荐搬瓦工,现在已经有CN2优化的线路了 , 购买非常方便，不需要信用卡，可以用支付宝直接购买 目前支持CN2的VPS都是基于KVM的，安装操作系统的适合主要选择支持bbr的64位系统， BBR是 Google 出的加速协议，直接在内核运行 服务器设置 服务器安装好之后，需要安装shadowsocks,搬瓦工已经内置了一键安装 SS的功能，在控制界面可以直接选择一键安装 Shadowsocks,但是个别的操作系统没有这个选项，需要用到下面的方法 去shadowsocks的 github 看 Readme安装]]></content>
     </entry>
 
     
