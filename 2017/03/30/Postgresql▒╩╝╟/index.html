@@ -69,7 +69,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="SpringBoots慢,getArchiveEntries,backgroundProcess," />
+  <meta name="keywords" content="PostgreSql,日期," />
 
 
 
@@ -87,24 +87,25 @@
 
 
 
-<meta name="description" content="使用单Jar部署SpringBoots, 方便,无其他依赖,在构建Jar的时候,会把所有的依赖都打包进Jar包中, 初看没什么问题.但是如果使用tomcat作为内嵌container,会出现规律性的请求变慢的问题, 经过Jvisualvm分析, 发现tomcat中有一个方法 getArchiveEntries 运行了1.6秒之多
+<meta name="description" content="PostgreSql 笔记获取不带毫秒的时间
+1234create table t1 (ts timestamp);insert into t1 values(now());select ts::timestamp(0) from t1;select cast (ts as timestamp(0)) from t1;
 
-有一个后台线程会周期性的调用webResourceSet的gc方法">
+https://www.postgresql.org/message-id/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SpringBoots单Jar部署导致的请求缓慢的问题">
-<meta property="og:url" content="http://yoursite.com/2017/04/26/SpringBoots单Jar部署导致的请求缓慢的问题/index.html">
+<meta property="og:title" content="PostgreSql笔记">
+<meta property="og:url" content="http://yoursite.com/2017/03/30/Postgresql▒╩╝╟/index.html">
 <meta property="og:site_name" content="自留地">
-<meta property="og:description" content="使用单Jar部署SpringBoots, 方便,无其他依赖,在构建Jar的时候,会把所有的依赖都打包进Jar包中, 初看没什么问题.但是如果使用tomcat作为内嵌container,会出现规律性的请求变慢的问题, 经过Jvisualvm分析, 发现tomcat中有一个方法 getArchiveEntries 运行了1.6秒之多
+<meta property="og:description" content="PostgreSql 笔记获取不带毫秒的时间
+1234create table t1 (ts timestamp);insert into t1 values(now());select ts::timestamp(0) from t1;select cast (ts as timestamp(0)) from t1;
 
-有一个后台线程会周期性的调用webResourceSet的gc方法">
-<meta property="og:image" content="http://yoursite.com/images/j1.png">
-<meta property="og:updated_time" content="2017-05-03T06:15:04.626Z">
+https://www.postgresql.org/message-id/">
+<meta property="og:updated_time" content="2018-05-29T14:16:48.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SpringBoots单Jar部署导致的请求缓慢的问题">
-<meta name="twitter:description" content="使用单Jar部署SpringBoots, 方便,无其他依赖,在构建Jar的时候,会把所有的依赖都打包进Jar包中, 初看没什么问题.但是如果使用tomcat作为内嵌container,会出现规律性的请求变慢的问题, 经过Jvisualvm分析, 发现tomcat中有一个方法 getArchiveEntries 运行了1.6秒之多
+<meta name="twitter:title" content="PostgreSql笔记">
+<meta name="twitter:description" content="PostgreSql 笔记获取不带毫秒的时间
+1234create table t1 (ts timestamp);insert into t1 values(now());select ts::timestamp(0) from t1;select cast (ts as timestamp(0)) from t1;
 
-有一个后台线程会周期性的调用webResourceSet的gc方法">
-<meta name="twitter:image" content="http://yoursite.com/images/j1.png">
+https://www.postgresql.org/message-id/">
 
 
 
@@ -132,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/04/26/SpringBoots单Jar部署导致的请求缓慢的问题/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/03/30/Postgresql▒╩╝╟/"/>
 
 
 
 
 
-  <title> SpringBoots单Jar部署导致的请求缓慢的问题 | 自留地 </title>
+  <title> PostgreSql笔记 | 自留地 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -291,7 +292,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/26/SpringBoots单Jar部署导致的请求缓慢的问题/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/30/Postgresql▒╩╝╟/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Alex8224">
@@ -312,7 +313,7 @@
             
             
               
-                SpringBoots单Jar部署导致的请求缓慢的问题
+                PostgreSql笔记
               
             
           </h2>
@@ -327,8 +328,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-26T11:23:08+08:00">
-                2017-04-26
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-30T11:20:00+08:00">
+                2017-03-30
               </time>
             
 
@@ -338,6 +339,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数据库/" itemprop="url" rel="index">
+                    <span itemprop="name">数据库</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -346,9 +369,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/04/26/SpringBoots单Jar部署导致的请求缓慢的问题/#comments" itemprop="discussionUrl">
+                <a href="/2017/03/30/Postgresql▒╩╝╟/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/04/26/SpringBoots单Jar部署导致的请求缓慢的问题/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/03/30/Postgresql▒╩╝╟/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -374,12 +397,81 @@
       
 
       
-        <p>使用单Jar部署SpringBoots, 方便,无其他依赖,在构建Jar的时候,会把所有的依赖都打包进Jar包中, 初看没什么问题.<br>但是如果使用tomcat作为内嵌container,会出现规律性的请求变慢的问题, 经过Jvisualvm分析, 发现tomcat中有一个方法 <code>getArchiveEntries</code> 运行了1.6秒之多</p>
-<p><img src="/images/j1.png" alt=""></p>
-<p>有一个后台线程会周期性的调用webResourceSet的gc方法,把getArchiveEntries中的初始化的资源回收掉<br>已经加载进内存的JarWarResourceSet回收.但是在下一次请求的时候,又会重新加载这些资源,慢的速度取决于依赖的多少. SpringBoots的Application.property中<br>有一个配置项可以调整回收线程的运行频率:</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">server.tomcat.background-processor-delay=30 #默认是30秒执行一次, -1是不启动回收线程</div></pre></td></tr></table></figure>
-<p>调整后这个请求响应时间下降了1.6秒.问题解决</p>
-<p>……</p>
+        <h1 id="PostgreSql-笔记"><a href="#PostgreSql-笔记" class="headerlink" title="PostgreSql 笔记"></a>PostgreSql 笔记</h1><p>获取不带毫秒的时间</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">create</span> <span class="keyword">table</span> t1 (ts <span class="keyword">timestamp</span>);</div><div class="line"><span class="keyword">insert</span> <span class="keyword">into</span> t1 <span class="keyword">values</span>(<span class="keyword">now</span>());</div><div class="line"><span class="keyword">select</span> ts::<span class="keyword">timestamp</span>(<span class="number">0</span>) <span class="keyword">from</span> t1;</div><div class="line"><span class="keyword">select</span> <span class="keyword">cast</span> (ts <span class="keyword">as</span> <span class="keyword">timestamp</span>(<span class="number">0</span>)) <span class="keyword">from</span> t1;</div></pre></td></tr></table></figure>
+<blockquote>
+<p><a href="https://www.postgresql.org/message-id/1136477796.21986.27.camel@state.g2switchworks.com" target="_blank" rel="external">https://www.postgresql.org/message-id/1136477796.21986.27.camel@state.g2switchworks.com</a></p>
+<p><a href="https://www.postgresql.org/docs/9.1/static/datatype-datetime.html" target="_blank" rel="external">https://www.postgresql.org/docs/9.1/static/datatype-datetime.html</a></p>
+</blockquote>
+<p>简单来说， timstamp(p), 这个p代表的是时间的精度，范围从 0-6. 下表对此做了详细的说明, 部署测试1111</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Storage Size</th>
+<th>Description</th>
+<th>Low Value</th>
+<th>High Value</th>
+<th>Resolution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timestamp [ (p) ] [ without time zone ]</td>
+<td>8 bytes</td>
+<td>both date and time (no time zone)</td>
+<td>4713 BC</td>
+<td>294276 AD</td>
+<td>1 microsecond / 14 digits</td>
+<td></td>
+</tr>
+<tr>
+<td>timestamp [ (p) ] with time zone</td>
+<td>8 bytes</td>
+<td>both date and time, with time zone</td>
+<td>4713 BC</td>
+<td>294276 AD</td>
+<td>1 microsecond / 14 digits</td>
+<td></td>
+</tr>
+<tr>
+<td>date</td>
+<td>4 bytes</td>
+<td>date (no time of day)</td>
+<td>4713 BC</td>
+<td>5874897 AD</td>
+<td>1 day</td>
+<td></td>
+</tr>
+<tr>
+<td>time [ (p) ] [ without time zone ]</td>
+<td>8 bytes</td>
+<td>time of day (no date)</td>
+<td>00:00:00</td>
+<td>24:00:00</td>
+<td>1 microsecond / 14 digits</td>
+<td></td>
+</tr>
+<tr>
+<td>time [ (p) ] with time zone</td>
+<td>12 bytes</td>
+<td>times of day only, with time zone</td>
+<td>00:00:00+1459</td>
+<td>24:00:00-1459</td>
+<td>1 microsecond / 14 digits</td>
+<td></td>
+</tr>
+<tr>
+<td>interval [ fields ] [ (p) ]</td>
+<td>16 bytes</td>
+<td>time interval</td>
+<td>-178000000 years</td>
+<td>178000000 years</td>
+<td>1 microsecond / 14 digits</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
@@ -409,11 +501,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/SpringBoots慢/" rel="tag"># SpringBoots慢</a>
+            <a href="/tags/PostgreSql/" rel="tag"># PostgreSql</a>
           
-            <a href="/tags/getArchiveEntries/" rel="tag"># getArchiveEntries</a>
-          
-            <a href="/tags/backgroundProcess/" rel="tag"># backgroundProcess</a>
+            <a href="/tags/日期/" rel="tag"># 日期</a>
           
         </div>
       
@@ -426,8 +516,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/30/differences-bw-authentication-authorization/" rel="next" title="授权和验证的区别">
-                <i class="fa fa-chevron-left"></i> 授权和验证的区别
+              <a href="/2017/03/29/oauth2/" rel="next" title="oauth2">
+                <i class="fa fa-chevron-left"></i> oauth2
               </a>
             
           </div>
@@ -436,8 +526,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/04/26/testImage/" rel="prev" title="testImage">
-                testImage <i class="fa fa-chevron-right"></i>
+              <a href="/2017/03/30/differences-bw-authentication-authorization/" rel="prev" title="授权和验证的区别">
+                授权和验证的区别 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -515,8 +605,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -531,7 +630,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -596,6 +695,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#PostgreSql-笔记"><span class="nav-number">1.</span> <span class="nav-text">PostgreSql 笔记</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -727,9 +842,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2017/04/26/SpringBoots单Jar部署导致的请求缓慢的问题/';
-          this.page.identifier = '2017/04/26/SpringBoots单Jar部署导致的请求缓慢的问题/';
-          this.page.title = 'SpringBoots单Jar部署导致的请求缓慢的问题';
+          this.page.url = 'http://yoursite.com/2017/03/30/Postgresql▒╩╝╟/';
+          this.page.identifier = '2017/03/30/Postgresql▒╩╝╟/';
+          this.page.title = 'PostgreSql笔记';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://.disqus.com/embed.js';
