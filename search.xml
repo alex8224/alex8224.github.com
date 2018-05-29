@@ -5,14 +5,14 @@
     <entry>
       <title><![CDATA[testImage]]></title>
       <url>%2F2017%2F04%2F26%2FtestImage%2F</url>
-      <content type="text"></content>
+      <content type="text"><![CDATA[]]></content>
     </entry>
 
     
     <entry>
       <title><![CDATA[SpringBoots单Jar部署导致的请求缓慢的问题]]></title>
       <url>%2F2017%2F04%2F26%2FSpringBoots%E5%8D%95Jar%E9%83%A8%E7%BD%B2%E5%AF%BC%E8%87%B4%E7%9A%84%E8%AF%B7%E6%B1%82%E7%BC%93%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98%2F</url>
-      <content type="text"><![CDATA[使用单Jar部署SpringBoots, 方便,无其他依赖,在构建Jar的时候,会把所有的依赖都打包进Jar包中, 初看没什么问题.但是如果使用tomcat作为内嵌container,会出现规律性的请求变慢的问题, 经过Jvisualvm分析, 发现tomcat中有一个方法 getArchiveEntries 运行了1.6秒之多 有一个后台线程会周期性的调用webResourceSet的gc方法,把getArchiveEntries中的初始化的资源回收掉已经加载进内存的JarWarResourceSet回收.但是在下一次请求的时候,又会重新加载这些资源,慢的速度取决于依赖的多少. SpringBoots的Application.property中有一个配置项可以调整回收线程的运行频率: 1server.tomcat.background-processor-delay=30 #默认是30秒执行一次, -1是不启动回收线程 调整后这个请求响应时间下降了1.6秒.问题解决]]></content>
+      <content type="text"><![CDATA[使用单Jar部署SpringBoots, 方便,无其他依赖,在构建Jar的时候,会把所有的依赖都打包进Jar包中, 初看没什么问题.但是如果使用tomcat作为内嵌container,会出现规律性的请求变慢的问题, 经过Jvisualvm分析, 发现tomcat中有一个方法 getArchiveEntries 运行了1.6秒之多 有一个后台线程会周期性的调用webResourceSet的gc方法,把getArchiveEntries中的初始化的资源回收掉已经加载进内存的JarWarResourceSet回收.但是在下一次请求的时候,又会重新加载这些资源,慢的速度取决于依赖的多少. SpringBoots的Application.property中有一个配置项可以调整回收线程的运行频率: 1server.tomcat.background-processor-delay=30 #默认是30秒执行一次, -1是不启动回收线程 调整后这个请求响应时间下降了1.6秒.问题解决 ……]]></content>
     </entry>
 
     
@@ -26,7 +26,7 @@
     <entry>
       <title><![CDATA[PostgreSql笔记]]></title>
       <url>%2F2017%2F03%2F30%2FPostgresql%E7%AC%94%E8%AE%B0%2F</url>
-      <content type="text"><![CDATA[PostgreSql 笔记获取不带毫秒的时间 1234create table t1 (ts timestamp);insert into t1 values(now());select ts::timestamp(0) from t1;select cast (ts as timestamp(0)) from t1; https://www.postgresql.org/message-id/1136477796.21986.27.camel@state.g2switchworks.com https://www.postgresql.org/docs/9.1/static/datatype-datetime.html 简单来说， timstamp(p), 这个p代表的是时间的精度，范围从 0-6. 下表对此做了详细的说明 Name Storage Size Description Low Value High Value Resolution timestamp [ (p) ] [ without time zone ] 8 bytes both date and time (no time zone) 4713 BC 294276 AD 1 microsecond / 14 digits timestamp [ (p) ] with time zone 8 bytes both date and time, with time zone 4713 BC 294276 AD 1 microsecond / 14 digits date 4 bytes date (no time of day) 4713 BC 5874897 AD 1 day time [ (p) ] [ without time zone ] 8 bytes time of day (no date) 00:00:00 24:00:00 1 microsecond / 14 digits time [ (p) ] with time zone 12 bytes times of day only, with time zone 00:00:00+1459 24:00:00-1459 1 microsecond / 14 digits interval [ fields ] [ (p) ] 16 bytes time interval -178000000 years 178000000 years 1 microsecond / 14 digits]]></content>
+      <content type="text"><![CDATA[PostgreSql 笔记获取不带毫秒的时间 1234create table t1 (ts timestamp);insert into t1 values(now());select ts::timestamp(0) from t1;select cast (ts as timestamp(0)) from t1; https://www.postgresql.org/message-id/1136477796.21986.27.camel@state.g2switchworks.com https://www.postgresql.org/docs/9.1/static/datatype-datetime.html 简单来说， timstamp(p), 这个p代表的是时间的精度，范围从 0-6. 下表对此做了详细的说明, 部署测试1111 Name Storage Size Description Low Value High Value Resolution timestamp [ (p) ] [ without time zone ] 8 bytes both date and time (no time zone) 4713 BC 294276 AD 1 microsecond / 14 digits timestamp [ (p) ] with time zone 8 bytes both date and time, with time zone 4713 BC 294276 AD 1 microsecond / 14 digits date 4 bytes date (no time of day) 4713 BC 5874897 AD 1 day time [ (p) ] [ without time zone ] 8 bytes time of day (no date) 00:00:00 24:00:00 1 microsecond / 14 digits time [ (p) ] with time zone 12 bytes times of day only, with time zone 00:00:00+1459 24:00:00-1459 1 microsecond / 14 digits interval [ fields ] [ (p) ] 16 bytes time interval -178000000 years 178000000 years 1 microsecond / 14 digits]]></content>
     </entry>
 
     

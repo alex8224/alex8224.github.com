@@ -98,7 +98,7 @@
 
 有一个后台线程会周期性的调用webResourceSet的gc方法">
 <meta property="og:image" content="http://yoursite.com/images/j1.png">
-<meta property="og:updated_time" content="2017-04-26T03:56:42.801Z">
+<meta property="og:updated_time" content="2017-05-03T06:15:04.626Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SpringBoots单Jar部署导致的请求缓慢的问题">
 <meta name="twitter:description" content="使用单Jar部署SpringBoots, 方便,无其他依赖,在构建Jar的时候,会把所有的依赖都打包进Jar包中, 初看没什么问题.但是如果使用tomcat作为内嵌container,会出现规律性的请求变慢的问题, 经过Jvisualvm分析, 发现tomcat中有一个方法 getArchiveEntries 运行了1.6秒之多
@@ -379,6 +379,7 @@
 <p>有一个后台线程会周期性的调用webResourceSet的gc方法,把getArchiveEntries中的初始化的资源回收掉<br>已经加载进内存的JarWarResourceSet回收.但是在下一次请求的时候,又会重新加载这些资源,慢的速度取决于依赖的多少. SpringBoots的Application.property中<br>有一个配置项可以调整回收线程的运行频率:</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">server.tomcat.background-processor-delay=30 #默认是30秒执行一次, -1是不启动回收线程</div></pre></td></tr></table></figure>
 <p>调整后这个请求响应时间下降了1.6秒.问题解决</p>
+<p>……</p>
 
       
     </div>
@@ -612,7 +613,7 @@
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
