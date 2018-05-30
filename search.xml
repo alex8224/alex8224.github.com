@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[使用Linux虚拟机搭建透明代理]]></title>
       <url>%2F2018%2F05%2F30%2Fbuild-tproxy%2F</url>
-      <content type="text"><![CDATA[准备工作 准备vps，推荐搬瓦工,现在已经有CN2优化的线路了 , 购买非常方便，不需要信用卡，可以用支付宝直接购买 目前支持CN2的VPS都是基于KVM的，安装操作系统的适合主要选择支持bbr的64位系统， BBR是 Google 出的加速协议，直接在内核运行 购买步骤 打开地址 https://bandwagonhost.com/aff.php?aff=30644 选择一个支持 CN2的VPS 选择 AliPay 付款 服务器设置 服务器安装好之后，需要安装shadowsocks,搬瓦工已经内置了一键安装 SS的功能，在控制界面可以直接选择一键安装 Shadowsocks,但是个别的操作系统没有这个选项，需要用到下面的方法 去shadowsocks的 github 看 Readme安装]]></content>
+      <content type="text"><![CDATA[准备工作 准备vps，推荐搬瓦工,现在已经有CN2优化的线路了 , 购买非常方便，不需要信用卡，可以用支付宝直接购买 目前支持CN2的VPS都是基于KVM的，安装操作系统的适合主要选择支持bbr的64位系统， BBR是 Google 出的加速协议，直接在内核运行 购买步骤 打开地址 https://bandwagonhost.com/aff.php?aff=30644 选择一个支持 CN2的VPS 选择 AliPay 付款 支付完成后去搬瓦工的控制台选择操作系统 需要选择BBR能力的VM 服务器设置 服务器安装好之后，需要安装shadowsocks,搬瓦工已经内置了一键安装 SS的功能，在控制界面可以直接选择一键安装 Shadowsocks,但是个别的操作系统没有这个选项，需要用到下面的方法 去shadowsocks的 github 看 Readme安装]]></content>
     </entry>
 
     
