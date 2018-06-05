@@ -378,18 +378,24 @@
 <li><p>目前支持CN2的VPS都是基于KVM的，安装操作系统的适合主要选择支持bbr的64位系统， BBR是 Google 出的加速协议，直接在内核运行</p>
 </li>
 </ol>
-<h1 id="购买步骤"><a href="#购买步骤" class="headerlink" title="购买步骤"></a>购买步骤</h1><ol>
-<li>打开地址 <a href="https://bandwagonhost.com/aff.php?aff=30644" target="_blank" rel="external">https://bandwagonhost.com/aff.php?aff=30644</a></li>
-<li>选择一个支持 CN2的VPS</li>
-<li>选择 <code>AliPay</code> 付款</li>
-<li>支付完成后去搬瓦工的控制台选择操作系统</li>
-<li>需要选择BBR能力的VM</li>
-</ol>
 <h2 id="服务器设置"><a href="#服务器设置" class="headerlink" title="服务器设置"></a>服务器设置</h2><ol>
-<li><p>服务器安装好之后，需要安装shadowsocks,搬瓦工已经内置了一键安装 SS的功能，在控制界面可以直接选择一键安装 Shadowsocks,但是个别的操作系统没有这个选项，需要用到下面的方法</p>
+<li><p>安装带bbr支持操作系统</p>
 </li>
-<li><p>去shadowsocks的 github 看 Readme安装</p>
+<li><p>安装shadowsocks-libev (<a href="https://github.com/shadowsocks/shadowsocks-libev" target="_blank" rel="external">https://github.com/shadowsocks/shadowsocks-libev</a>)</p>
 </li>
+<li><p>根据说明配置shadowsocks-libev, <strong>注意</strong>:在启动ss-server时，增加 -u 参数，打开udp relay</p>
+</li>
+</ol>
+<h2 id="虚拟机配置"><a href="#虚拟机配置" class="headerlink" title="虚拟机配置"></a>虚拟机配置</h2><p>虚拟机用vmware或者virtualbox，甚至 hyperV都可以, 虚拟机需要使用桥接网络</p>
+<ol>
+<li><p>需要准备一个linux的操作系统。本例中使用 ubuntu 16.04 64bit</p>
+</li>
+<li><p>参照 <a href="https://medium.com/@oliviaqrs/%E5%88%A9%E7%94%A8shadowsocks%E6%89%93%E9%80%A0%E5%B1%80%E5%9F%9F%E7%BD%91%E7%BF%BB%E5%A2%99%E9%80%8F%E6%98%8E%E7%BD%91%E5%85%B3-fb82ccb2f729" target="_blank" rel="external">https://medium.com/@oliviaqrs/%E5%88%A9%E7%94%A8shadowsocks%E6%89%93%E9%80%A0%E5%B1%80%E5%9F%9F%E7%BD%91%E7%BF%BB%E5%A2%99%E9%80%8F%E6%98%8E%E7%BD%91%E5%85%B3-fb82ccb2f729</a> 配置你的系统</p>
+</li>
+</ol>
+<h2 id="客户机"><a href="#客户机" class="headerlink" title="客户机"></a>客户机</h2><p>客户机是指你需要使用透明代理的机器</p>
+<ol>
+<li>修改机器的网关和dns，都指向虚拟机的IP地址</li>
 </ol>
 
           
